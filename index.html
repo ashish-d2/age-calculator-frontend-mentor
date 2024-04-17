@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="form-inputs">
+        <div class="input">
+          <label for="day">DAY</label>
+          <input type="number" name="day" id="day" placeholder="DD" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="input">
+          <label for="month">MONTH</label>
+          <input type="number" name="month" id="month" placeholder="MM" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="input">
+          <label for="year">YEAR</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" />
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="grey-line"></div>
+        <button type="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="form-submit" />
+        </button>
+      </div>
+
+      <div class="display-output">
+        <p><span id="display-year">--</span> years</p>
+        <p><span id="display-month">--</span> months</p>
+        <p><span id="display-day">--</span> days</p>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/ashish__d2">Ashish Dungdung</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

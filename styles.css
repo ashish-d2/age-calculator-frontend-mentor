@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+main {
+  max-width: 50vw;
+  min-height: 60vh;
+
+  background-color: #fff;
+  margin: 150px auto;
+  border-radius: 5%;
+  border-bottom-right-radius: 40%;
+  padding: 2.5rem;
+}
+
+/* main {
+  max-width: 80vw;
+  min-height: 60vh;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  border-radius: 5%;
+  border-bottom-right-radius: 40%;
+  padding: 2.5rem;
+} */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  font-size: 0.8rem;
+  color: var(--smokey-grey);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  font-size: 2rem;
+  font-weight: 800;
+  height: 4rem;
+  width: 9rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+input::placeholder {
+  color: var(--smokey-grey);
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.grey-line {
+  border: none;
+  border-top: 1px solid var(--light-grey);
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color: var(--Purple);
+  cursor: pointer;
+}
+
+button img {
+  width: 3.5rem;
+  height: 3rem;
+}
+
+.form-inputs {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+p:nth-child(2) {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+p span {
+  color: var(--Purple);
+}
+
+/* error styles */
+.error-label {
+  color: var(--light-red);
+}
+
+.error-input {
+  border-color: var(--light-red);
+}
+
+.error-message {
+  visibility: hidden;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--light-red);
+}
