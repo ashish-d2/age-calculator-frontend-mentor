@@ -79,7 +79,7 @@ input::placeholder {
   color: var(--smokey-grey);
 }
 
-.middle {
+/* .middle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +91,20 @@ input::placeholder {
   border-top: 1px solid var(--light-grey);
   width: 100%;
 }
+*/
+.middle {
+  position: relative;
+  margin: 3rem 0 4.5rem 0;
+}
+
+.grey-line {
+  border: none;
+  border-top: 1px solid var(--light-grey);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
 
 button {
   border: none;
@@ -98,6 +112,10 @@ button {
   padding: 0.8rem;
   background-color: var(--Purple);
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 button img {
