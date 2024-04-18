@@ -161,3 +161,92 @@ p span {
   font-style: italic;
   color: var(--light-red);
 }
+
+@media (max-width: 1250px) {
+  button {
+    right: 45%;
+  }
+
+  .form-inputs {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  input {
+    width: 8rem;
+  }
+
+  button {
+    right: 42%;
+  }
+}
+
+@media (max-width: 940px) {
+  input {
+    width: 7rem;
+  }
+
+  input::placeholder {
+    color: var(--smokey-grey);
+    font-size: 1.8rem;
+  }
+
+  .error-message {
+    font-size: 0.7rem;
+  }
+
+  button {
+    right: 40%;
+  }
+
+  button img {
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  p {
+    font-size: 3.5rem;
+  }
+
+  button img {
+    width: 2.5rem;
+    height: 2rem;
+  }
+
+  main {
+    max-width: 60vw;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    max-width: 70vw;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    max-width: 80vw;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 525px) {
+  main {
+    max-width: 95vw;
+    min-height: 60vh;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  main {
+    padding: 1.5rem;
+    min-width: 400px;
+  }
+}
